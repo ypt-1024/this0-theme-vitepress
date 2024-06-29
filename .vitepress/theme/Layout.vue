@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData } from "vitepress";
+
+import NotFound from './views/layout/NotFound.vue'
+import Home from './views/layout/Home.vue'
+import Page from './views/layout/Page.vue'
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site, frontmatter } = useData()
+const { page, frontmatter } = useData();
 </script>
 
 <template>
-  <div v-if="frontmatter.home">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <ul>
-      <li><a href="/markdown-examples.html">Markdown Examples</a></li>
-      <li><a href="/api-examples.html">API Examples</a></li>
-    </ul>
-  </div>
-  <div v-else>
-    <a href="/">Home</a>
-    <Content />
-  </div>
+  <h1>Custom Layout!</h1>
+
+  <NotFound v-if="page.isNotFound" />
+
+  <Home v-if="frontmatter.home" />
+  <Page v-else />
+  <!-- <Page /> renders <Content /> -->
 </template>
