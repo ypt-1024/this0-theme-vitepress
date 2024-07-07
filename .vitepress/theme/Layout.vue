@@ -10,10 +10,7 @@ const { page, frontmatter } = useData();
 </script>
 
 <template>
-  <h1>Custom Layout!</h1>
-
   <NotFound v-if="page.isNotFound" />
-
   <Home v-if="frontmatter.home" />
   <Page v-else />
   <!-- <Page /> renders <Content /> -->

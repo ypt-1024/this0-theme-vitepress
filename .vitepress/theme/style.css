@@ -1,5 +1,20 @@
-
 html {
   font-family: Arial, Helvetica;
 }
 
+/* 版心设置 */
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.topbar-nav {
+  height: 60px;
+}
+
+.topbar-banner {
+  background-color: rgb(160, 163, 137);
+  height: 370px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
