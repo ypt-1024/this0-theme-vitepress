@@ -20,8 +20,10 @@ html {
 /* #endregion顶部end */
 
 /* #region内容区start */
+
 .main-category {
   width: 820px;
+  height: 32px;
   /* padding: 3px; */
   background-color: yellow;
 }
@@ -29,7 +31,7 @@ html {
 /* 内容区文章列表 */
 .main-article-list {
   width: 820px;
-  height: 750px;
+  height: 1030px;
   /* background-color: rgb(255, 0, 17); */
 }
 
@@ -38,10 +40,6 @@ html {
   /* background-color: aquamarine; */
   height: 250px;
   margin: 0;
-}
-
-.main-article-detail {
-  /* background-color: aqua; */
 }
 
 .article-img {
@@ -68,7 +66,45 @@ html {
 
 .main-page {
   width: 820px;
+  height: 32px;
   background: yellow;
 }
 
 /* #endregion内容区end */
+
+/* #region内容区侧边栏start */
+.author-info {
+  margint: 0px;
+  height: 385px;
+  background-color: rgb(220, 123, 150);
+}
+
+.main-article-record {
+  background-color: aquamarine;
+  height: 450px;
+  margin: 0;
+}
+
+.main-article-record-row {
+  /* background-color: aquamarine; */
+  height: 100px;
+  margin: 0;
+}
+
+.record-bg {
+  background-color: #9a79b2;
+  padding: 10px;
+}
+
+.main-article-record {
+  background-color: rgb(210, 137, 149);
+  height: 450px;
+  margin: 0;
+}
+
+.article-count-bg {
+  background-color: #c44242;
+  height: auto;
+}
+
+/* #endregion内容区侧边栏end */
