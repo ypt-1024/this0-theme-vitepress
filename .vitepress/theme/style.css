@@ -2,19 +2,73 @@ html {
   font-family: Arial, Helvetica;
 }
 
-/* 版心设置 */
+/* 版心大小 */
 .container {
   width: 1190px;
   margin: 0 auto;
 }
 
-.topbar-nav {
-  height: 60px;
+/* #region顶部start */
+.topbar-message {
+  background-color: yellow;
 }
 
 .topbar-banner {
   background-color: rgb(160, 163, 137);
-  height: 370px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
+
+/* #endregion顶部end */
+
+/* #region内容区start */
+.main-category {
+  width: 820px;
+  /* padding: 3px; */
+  background-color: yellow;
+}
+
+/* 内容区文章列表 */
+.main-article-list {
+  width: 820px;
+  height: 750px;
+  /* background-color: rgb(255, 0, 17); */
+}
+
+/* 内容区一行文章 */
+.main-article-row {
+  /* background-color: aquamarine; */
+  height: 250px;
+  margin: 0;
+}
+
+.main-article-detail {
+  /* background-color: aqua; */
+}
+
+.article-img {
+  height: 120px;
+}
+
+.article-other {
+  background-color: rgb(176, 176, 183);
+}
+
+.artivle-title {
+  height: 30px;
+}
+
+.artivle-abstract {
+  height: 75px;
+  /* background-color: rgb(167, 109, 109); */
+}
+
+.artivle-publish {
+  height: 25px;
+  /* background-color: beige; */
+}
+
+.main-page {
+  width: 820px;
+  background: yellow;
+}
+
+/* #endregion内容区end */

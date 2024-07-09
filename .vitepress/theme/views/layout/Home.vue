@@ -14,7 +14,7 @@ const { site } = useData()
 
             <!-- 顶部导航条 -->
             <div class="topbar-nav">
-                <el-row align="middle" justify="start">
+                <el-row align="middle">
 
                     <!-- 左侧站点标题 -->
                     <el-col :span="6">
@@ -108,7 +108,7 @@ const { site } = useData()
 
             <!-- 顶部Banner -->
             <div class="topbar-banner">
-                <el-row align="middle" justify="start">
+                <el-row align="middle">
 
                     <!-- 左侧站点信息 -->
                     <el-col :span="12">
@@ -128,9 +128,324 @@ const { site } = useData()
                 </el-row>
             </div>
         </el-header>
-        <!-- <el-main>Main</el-main> -->
-        <!-- <el-footer>Footer</el-footer> -->
+
+        <!-- 内容区 -->
+        <el-main>
+
+            <!-- 主要分类 -->
+            <div class="main-category">
+                <el-row align="middle" justify="start">
+                    <el-button type="primary">分类</el-button>
+                    <el-button color="#fff">
+                        <span style="vertical-align: middle">Archlinux </span>
+                    </el-button>
+                    <el-button color="#fff">
+                        <span style="vertical-align: middle">Java </span>
+                    </el-button>
+                    <el-button color="#fff">
+                        <span style="vertical-align: middle">Godot </span>
+                    </el-button>
+                    <el-button color="#fff">
+                        <span style="vertical-align: middle">vitepress </span>
+                    </el-button>
+                    <el-button color="#fff">
+                        <span style="vertical-align: middle">前端 </span>
+                    </el-button>
+                </el-row>
+            </div>
+
+            <!-- 内容区文章列表 -->
+            <div class="main-article-list">
+
+                <!-- 一排的两篇文章 -->
+                <el-row :gutter="20" class="main-article-row">
+
+                    <!-- 内容区单篇文章 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+
+                        <!-- 文章文字部分 -->
+                        <div class="article-other">
+
+                            <!-- 1.文章标题 -->
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        【spring MVC】
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+
+                            <!-- 2.文章摘要 -->
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    Spring MVC属于SpringFrameWork的后续产品，已经融合在Spring Web
+                                    Flow里面。Spring 框架提供了构建 Web 应用程序的全功能 MVC
+                                    模块。
+                                </div>
+                            </el-row>
+
+                            <!-- 3.文章发表时间 -->
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+
+                    <!-- 内容区文章2 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+                        <div class="article-other">
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        文章2的标题
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    这是文章2
+                                </div>
+                            </el-row>
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20" class="main-article-row">
+
+                    <!-- 内容区单篇文章 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+
+                        <!-- 文章文字部分 -->
+                        <div class="article-other">
+
+                            <!-- 1.文章标题 -->
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        【spring MVC】
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+
+                            <!-- 2.文章摘要 -->
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    Spring MVC属于SpringFrameWork的后续产品，已经融合在Spring Web
+                                    Flow里面。Spring 框架提供了构建 Web 应用程序的全功能 MVC
+                                    模块。
+                                </div>
+                            </el-row>
+
+                            <!-- 3.文章发表时间 -->
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+
+                    <!-- 内容区文章2 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+                        <div class="article-other">
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        文章2的标题
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    这是文章2
+                                </div>
+                            </el-row>
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20" class="main-article-row">
+
+                    <!-- 内容区单篇文章 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+
+                        <!-- 文章文字部分 -->
+                        <div class="article-other">
+
+                            <!-- 1.文章标题 -->
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        【spring MVC】
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+
+                            <!-- 2.文章摘要 -->
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    Spring MVC属于SpringFrameWork的后续产品，已经融合在Spring Web
+                                    Flow里面。Spring 框架提供了构建 Web 应用程序的全功能 MVC
+                                    模块。
+                                </div>
+                            </el-row>
+
+                            <!-- 3.文章发表时间 -->
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+
+                    <!-- 内容区文章2 -->
+                    <el-col :span="12" class="main-article-detail">
+
+                        <!-- 文章图片 -->
+                        <el-row>
+                            <div class="article-img">
+                                <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
+                                    style="max-width: 100%; max-height: 100%" />
+                            </div>
+                        </el-row>
+                        <div class="article-other">
+                            <el-row>
+                                <el-col :span="2"></el-col>
+                                <el-col :span="20">
+                                    <div class="artivle-title">
+                                        文章2的标题
+                                    </div>
+                                </el-col>
+                                <el-col :span="2"></el-col>
+                            </el-row>
+                            <el-row>
+                                <div class="artivle-abstract">
+                                    这是文章2
+                                </div>
+                            </el-row>
+                            <el-row>
+                                <el-col :span="14"></el-col>
+                                <el-col :span="10">
+                                    <div class="artivle-publish">
+                                        发布于 2023-06-26
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+
+            <!-- 分页 -->
+            <div class="main-page">
+                <el-row justify="center">
+
+                    <el-col :span="8">
+
+                    </el-col>
+                    <el-col :span="8">
+                        <el-pagination layout="prev, pager, next" :total="1000" />
+                    </el-col>
+                    <el-col :span="8">
+
+                    </el-col>
+                </el-row>
+            </div>
+        </el-main>
+        <el-footer>
+        </el-footer>
     </el-container>
 </template>
 
-<style scoped></style>
+<style scoped>
+.el-button--large {
+    padding: 0;
+}
+
+.el-header {
+    --el-header-height: 550px;
+    --el-header-padding: 0;
+}
+
+.el-main {
+    /* height: 1032px; */
+    --el-main-padding: 0;
+
+}
+</style>
