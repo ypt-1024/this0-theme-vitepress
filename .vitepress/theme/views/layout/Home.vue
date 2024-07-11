@@ -125,6 +125,7 @@ const { site } = useData()
 
                     <!-- 右侧banner -->
                     <el-col :span="12">
+
                     </el-col>
                 </el-row>
             </div>
@@ -764,7 +765,7 @@ const { site } = useData()
 }
 
 .el-header {
-    --el-header-height: 550px;
+    --el-header-height: 455px;
     --el-header-padding: 0;
 }
 
