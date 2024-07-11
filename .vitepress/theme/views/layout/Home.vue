@@ -18,18 +18,19 @@ const { site } = useData()
 
                     <!-- 左侧站点标题 -->
                     <el-col :span="6">
-                        <el-button color="#fff" size="large">
-                            <el-icon size="large">
+                        <el-button color="#e2e0e1" size="large">
+                            <el-icon size="x-large">
                                 <House />
                             </el-icon>
-                            <span style="vertical-align: middle">{{ site.title }} </span>
+                            <span style="vertical-align: middle;font-size: x-large;">{{ site.title }} </span>
                         </el-button>
                     </el-col>
 
                     <!-- 中间菜单区 -->
                     <el-col :span="12">
                         <el-row justify="center">
-                            <el-menu mode="horizontal" :ellipsis="false" text-color="black" active-text-color="green">
+                            <el-menu mode="horizontal" :ellipsis="false" background-color="#e2e0e1" text-color="black"
+                                active-text-color="green">
                                 <el-sub-menu index="1">
                                     <template #title>文章</template>
                                     <el-menu-item index="1-1">item one</el-menu-item>
@@ -61,8 +62,8 @@ const { site } = useData()
                     <!-- 右侧功能区 -->
                     <el-col :span="6">
                         <el-row justify="end">
-                            <el-button color="#fff" size="large">
-                                <el-icon style="vertical-align: middle" size="large">
+                            <el-button color="#e2e0e1" size="large">
+                                <el-icon style="vertical-align: middle" size="x-large">
                                     <Search />
                                 </el-icon>
                             </el-button>
@@ -79,7 +80,7 @@ const { site } = useData()
 
                     <!-- 左侧即刻 -->
                     <el-col :span="6">
-                        <el-button color="#fff" size="large">
+                        <el-button color="#e2e0e1" size="x-large">
                             <span style="vertical-align: middle">即刻 </span>
                         </el-button>
                     </el-col>
@@ -87,14 +88,16 @@ const { site } = useData()
                     <!-- 消息内容 -->
                     <el-col :span="12">
                         <el-row justify="center">
-                            消息内容轮播
+                            <div class="message-bg">
+                                This0-开源Vitepress主题
+                            </div>
                         </el-row>
                     </el-col>
 
                     <!-- 右侧展开图标 -->
                     <el-col :span="6">
                         <el-row justify="end">
-                            <el-button color="#fff" size="large">
+                            <el-button color="#e2e0e1" size="x-large">
                                 <el-icon style="vertical-align: middle" size="large">
                                     <ArrowRight />
                                 </el-icon>
@@ -122,8 +125,6 @@ const { site } = useData()
 
                     <!-- 右侧banner -->
                     <el-col :span="12">
-                        <el-image :src="'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'"
-                            fit="scale-down" />
                     </el-col>
                 </el-row>
             </div>
@@ -637,17 +638,6 @@ const { site } = useData()
 
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
                     <!-- 统计 -->
                     <div class="main-article-count">
                         <div class="article-count-bg">
@@ -664,6 +654,106 @@ const { site } = useData()
             </el-row>
         </el-main>
         <el-footer>
+            <div class="footer">
+                <div class="footer-group">
+                    <el-row>
+                        <el-col :span="4">
+                        </el-col>
+                        <el-col :span="4">
+                            <h3>主题</h3>
+                        </el-col>
+                        <el-col :span="4">
+                            <h3>导航</h3>
+                        </el-col>
+                        <el-col :span="4">
+                            <h3>服务</h3>
+                        </el-col>
+                        <el-col :span="4">
+                            <h3>协议</h3>
+                        </el-col>
+                        <el-col :span="4">
+                            <h3>友链</h3>
+                        </el-col>
+                    </el-row>
+                    <el-row>
+                        <el-col :span="4">
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>主题</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>导航</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>服务</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>协议</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>友链</h5>
+                        </el-col>
+                    </el-row><el-row>
+                        <el-col :span="4">
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>主题</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>导航</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>服务</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>协议</h5>
+                        </el-col>
+                        <el-col :span="4">
+                            <h5>友链</h5>
+                        </el-col>
+                    </el-row>
+
+
+                </div>
+                <div class="footer-badge">
+
+                    <el-row>
+
+                        <div class="footer-blank">
+
+                        </div>
+                        <div class="shields">
+                            <a target="_blank" href="https://this0.com/" title="主题采用This0">
+                                <img src="../../images/Theme-This0.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="shields">
+                            <a target="_blank" href="https://shields.io/" title="框架采用vitepress"> <img
+                                    src="../../images/Frame-Vitepress.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="shields">
+                            <img src="../../images/Copyright-BY--NC--SA_4.0.svg" alt="">
+                        </div>
+                        <div class="shields">
+                            <a target="_blank" href="https://github.com/" title="使用github托管代码">
+                                <img src="../../images/Source-Github.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="shields">
+                            <a target="_blank" href="https://shields.io/" title="徽标使用shields制作"> <img
+                                    src="../../images/Icon-Shields.svg" alt=""></a>
+                        </div>
+
+
+
+                    </el-row>
+
+
+
+                </div>
+                <div class="footer-copyright"> <img src="../../images/蜀ICP备-2023013130号.svg" alt=""></div>
+            </div>
         </el-footer>
     </el-container>
 </template>
@@ -682,5 +772,9 @@ const { site } = useData()
     /* height: 1032px; */
     --el-main-padding: 0;
 
+}
+
+.el-footer {
+    --el-footer-padding: 0;
 }
 </style>
